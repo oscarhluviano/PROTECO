@@ -1,0 +1,21 @@
+
+
+/*Mapa*/
+#map{
+    height: 400px;
+    width: 100%; 
+}
+
+/*Carousel*/
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+      width: 50%;
+      margin: auto;
+}
+/*mediaqueries*/
+@media screen and (max-width: 1800px) and (min-width: 992px){
+    .carousel-inner > .item > a > img {
+      width: 30%;
+      margin: auto;
+}
+}
