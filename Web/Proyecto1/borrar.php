@@ -3,13 +3,12 @@
 
 	// hacer la query
 
- 		$id=$_GET['id'];
- 		var_dump($id);
-        $consulta ="DELETE FROM `inventario` WHERE id_i=$id";
+ 		$id=$_POST['id'];
+        $consulta ="DELETE FROM `inventario` WHERE id_i='$id'";
         // echo $consulta;
         // ejecutar la query
         $hoa= mysqli_query($conexion,$consulta);
-        var_dump($hoa);
+        header("Location: delet.php");
         // redireccionar
 
 ?>

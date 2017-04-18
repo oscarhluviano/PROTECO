@@ -25,7 +25,7 @@
 						<li><a href="usuarios.php">Usuarios</a></li>
 					</ul>
 				</li>
-				<li><a href="faq.html">FAQ</a></li>
+				<li><a href="faqadmin.html">FAQ</a></li>
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
 				<li><a href="datos.php"><span class="glyphicon glyphicon-user"></span>Perfil</a></li>
@@ -69,20 +69,16 @@
 			</table>
 		</div>
 	<div>
-		<form action="agregar.php" method="get">
-			<div  class="form-group">
-				<label for="text">ID(no se puede repetir):</label>
-				<input type="text" class="form-control" id="id" name="id" placeholder="Inserte el ID">
-			</div>
+		<form action="agregar.php" method="post">
 			<div  class="form-group">
 				<label for="text">Nombre:</label>
-				<input type="text" class="form-control" id="nombre" name="nombre" placeholder="Inserte el ID">
+				<input type="text" class="form-control" id="nombre" name="nombre" placeholder="Inserte el nombre">
 			</div>
 			<div  class="form-group">
-				<label for="text">Descripcion:</label>
-				<input type="text" class="form-control" id="descripcion" name="descripcion" placeholder="Inserte el ID">
+				<label for="text">Descripción:</label>
+				<input type="text" class="form-control" id="descripcion" name="descripcion" placeholder="Inserte la descripción">
 			</div>
-			<button type="submit" class="btn btn-info">Borrar</button>
+			<button type="submit" class="btn btn-info">Agregar</button>
 		</form>
 	</div>
 </body>

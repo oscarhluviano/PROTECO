@@ -4,7 +4,6 @@ $username = "root";
 $password = "";
 $dbname = "p1";
 
-$id=$_POST['id'];
 $nombre=$_POST['nombre'];
 $descripcion=$_POST['descripcion'];
 
@@ -15,8 +14,8 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 } 
 
-$sql = "INSERT INTO inventario
-VALUES ('$id', '$nombre', '$descripcion')";
+$sql = "INSERT INTO inventario (nombre, descripcion)
+VALUES ('$nombre', '$descripcion')";
 
 if ($conn->query($sql) === TRUE) {
     echo "Se agrego con exito";

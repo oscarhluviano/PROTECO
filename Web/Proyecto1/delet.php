@@ -69,7 +69,7 @@
 			</table>
 		</div>
 	<div>
-		<form action="borrar.php" method="get">
+		<form action="borrar.php" method="post">
 			<div  class="form-group">
 				<label for="text">Elemento que desea borrar:</label>
 				<input type="text" class="form-control" id="id" name="id" placeholder="Inserte el ID">
